@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'DidactGothic';
+  src: url('assets/fonts/DidactGothic-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('assets/fonts/OpenSans-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('assets/fonts/OpenSans-Light.ttf')  format('truetype');
+}
+
+:root {
+  /* colors */
+  --main-font-color: #000;
+  --main-accent-color: #4923f4;
+  /* fonts */
+  --header-font: DidactGothic;
+  --text-font: OpenSansRegular;
+  --text-thin-font: OpenSansLight;
+}
+
+/* Global Things */
+
+@media screen and (max-width: 45em) {
+  main {
+    max-width: 640px;
+    overflow-x: visible;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  main {
+    max-width: 1150px;
+    overflow-x: visible;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--header-font);
+}
+
+span, p, label, li, caption {
+  font-family: var(--text-font);
+}
+
+a, a:visited {
+  font-family: var(--header-font);
+  color: var(--main-accent-color);
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top:0;
+  width:100%;
+}
+/* Navigation */
+nav {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 45em) {
+  nav h1 {
+    font-size: 1.1em;
+  }
+}
+
+nav h1 {
+  font-size: 1.3em;
+}
+
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+nav > ul > li {
+  margin-right: 3em;
+  font-family: var(--header-font);
+  color: var(--main-accent-color);
+}
+nav ul li > a, nav ul li > a:visited {
+  color: var(--main-accent-color);
+  text-decoration: none;
+}
+
+nav ul li > a:active {
+  color: #000;
+}
+
+.image-sub {
+  font-family: var(--text-thin-font);
+}
+
+.intro {
+  margin: 8em 0 13em 5em;
+  max-width: 40em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 45em) {
+  .intro {
+    margin: 4em 0 8em 0;
+  }
+}
+
+.intro h3 {
+  font-family: var(--header-font);
+  font-size:2rem;
+  word-wrap: normal;
+}
+
+.intro > span {
+  color: var(--main-accent-color);
+  font-size: .8em;
+  align-self: flex-start;
+}
+
+
+
+/* main content */
+@media screen and (max-width: 45em) {
+   main > .grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .grid > a {
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
+}
+
+
+.grid > a {
+  height: auto;
+}
+
+.imageWrapper {
+  position: relative;
+  width: inherit;
+  height: auto;
+}
+
+.imageWrapper img {
+  display: block;
+  width: 100%;
+}
+.imageWrapper .cornerLink {
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(255,255,255,0.5);
+  height:100%;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.imageWrapper .cornerLink h3 {
+  color: var(--main-accent-color);
+  font-size: 3em;
+  opacity: 1;
+}
+
+
+.imageWrapper:hover .cornerLink {
+  opacity: 0.8;
+}
+
+.imageWrapper:hover .cornerLink h3 {
+  opacity: 1;
+}
+
+/* Let's work together */
+
+.letswork {
+  text-align: center;
+  margin : 4em 0;
+}
+
+.letswork > h4{
+  color: var(--main-accent-color);
+  text-align: center;
+  letter-spacing: 1.4px;
+  font-size:1.5em;
+}
+
+.letswork button {
+  background-color: var(--main-accent-color);
+  color: #fff;
+  border: none;
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size:1em;
+  padding: 1em 3em;
+}
+
+@media screen and (max-width: 45em) {
+
+}
+
+footer {
+  border-top: 2px solid var(--main-accent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.5em;
+  margin-bottom: 4.5em;
+}
+
+footer > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.socials > ul{
+  display: flex;
+  flex-directions: row;
+  list-style: none;
+  justify-content: center;
+}
+
+.socials > ul > li {
+  margin-right: 2em;
+}
+
+.socials > ul > li > a {
+  color: black;
+  font-weight: 800;
+}
+.contact-info span {
+  margin-right:.5em;
+}
+a[href="mailto:kilian-s@hotmail.com"] {
+  margin-right:.5em;
+}
+footer > span {
+  align-items: center;
+  font-size: .8em;
+}
