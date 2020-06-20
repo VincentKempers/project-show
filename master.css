@@ -272,10 +272,15 @@ footer > section {
 .contact-info span {
   margin-right:.5em;
 }
+
 a[href="mailto:kilian-s@hotmail.com"] {
   margin-right:.5em;
 }
+
 footer > span {
   align-items: center;
   font-size: .8em;
 }
+
+
+/* ProjectPages */
