@@ -32,12 +32,12 @@ function showAllImages() {
 
 function getTheRightImage(element) {
   count = element.attributes.data.value;
-  carouselImages[count].classList.add('active');
   if (count === 0) {
     prev.style.display = 'none';
-  }else {
+  } else {
     prev.style.display = 'block';
   }
+  carouselImages[count].classList.add('active');
 }
 
 

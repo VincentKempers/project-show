@@ -29,7 +29,27 @@
   height: auto;
 }
 
+/* product info */
+.product-info {
+  margin: 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
 
+.product-info > ul {
+  margin-right: 5em;
+  list-style: none;
+  font-size: .8em;
+}
+
+.product-info > p {
+  max-width: 35em;
+}
+
+
+/* carousel stuff */
 .actual-carousel {
   background-color: white;
   height: 100vh;
@@ -41,7 +61,6 @@
   right: 0;
   left: 0;
   bottom: 0;
-  /* margin: 1em 1em; */
   display: none;
 }
 
@@ -120,4 +139,10 @@
   right: 0;
   bottom: 0;
   width: 100%;
+}
+
+
+.prev-next-project {
+  margin: 6em;
+  text-align: center;
 }
