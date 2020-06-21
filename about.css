@@ -1,0 +1,43 @@
+
+
+.about-me{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
+.about-me > article {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+
+}
+
+.about-me > article > ul {
+  list-style: none;
+  margin: 0 2em;
+}
+
+.about-me > article > ul > li{
+  list-style: none;
+  font-family: var(--header-font);
+  font-weight: 900;
+  font-size: 1.4em;
+  color: var(--main-accent-color);
+}
+
+
+.about-me > article:first-of-type > div > p {
+  max-width: 40em;
+  font-family: var(--header-font);
+  font-weight: 800;
+}
+
+.about-me > article:first-of-type > div > p {
+  max-width: 40em;
+  font-family: var(--header-font);
+  font-weight: 800;
+}
