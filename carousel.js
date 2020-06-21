@@ -31,9 +31,7 @@ function showAllImages() {
 }
 
 function getTheRightImage(element) {
-  console.log(element);
   count = element.attributes.data.value;
-  console.log(count);
   carouselImages[count].classList.add('active');
   if (count === 0) {
     prev.style.display = 'none';
@@ -46,9 +44,7 @@ function getTheRightImage(element) {
 prev.addEventListener('click', function() {
   if (count === 0) {
     carouselImages[count].classList.remove('active');
-    console.log(count);
     count = section.length - 1;
-    console.log(count);
     carouselImages[count].classList.add('active');
   } else {
     carouselImages[count].classList.remove('active');
@@ -61,13 +57,11 @@ prev.addEventListener('click', function() {
 
 next.addEventListener('click', function() {
   if (count) {
-    console.log('yes')
   }
   if (count === section.length - 1) {
     // next.style.display = 'none';
     carouselImages[count].classList.remove('active');
     count = 0;
-    console.log(count);
     carouselImages[count].classList.add('active');
   } else {
     // next.style.display = 'block';
