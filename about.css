@@ -1,24 +1,28 @@
-
+main {
+  width: 1000px;
+  padding: 8em 0;
+}
 
 .about-me{
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: baseline;
 }
 
 
 .about-me > article {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   align-items: baseline;
   flex-direction: row;
-
+  width:100%;
 }
 
 .about-me > article > ul {
   list-style: none;
-  margin: 0 2em;
+  margin: 0 3em;
 }
 
 .about-me > article > ul > li{
@@ -30,10 +34,16 @@
 }
 
 
-.about-me > article:first-of-type > div > p {
+.about-me > article > div > p {
   max-width: 40em;
   font-family: var(--header-font);
-  font-weight: 800;
+}
+
+.about-me > article > div > span {
+  max-width: 40em;
+  font-family: var(--header-font);
+  padding :0;
+  font-size: .9em;
 }
 
 .about-me > article:first-of-type > div > p {

@@ -298,3 +298,7 @@ footer > span {
 
 
 /* ProjectPages */
+.prev-next-project {
+  margin: 4em;
+  text-align: center;
+}
