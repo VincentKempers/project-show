@@ -3,31 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hi i'm Kilian</title>
   <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="project.css">
+  <title>Artis | Kilian Stuardo</title>
+  <style>
+    .parallax {
+      /* The image used */
+      background-image: url("https://via.placeholder.com/400/000000/FFFFFF/?text=Picture+of+Project");
+
+      /* Set a specific height */
+      height: 600px;
+      width: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+    </style>
 </head>
 <body>
   <header>
     <nav>
       <h1>Kilian Stuardo</h1>
       <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html" active>About</a></li>
+        <li><a href="../index.html" active>Work</a></li>
+        <li><a href="../about.html">About</a></li>
       </ul>
     </nav>
-    <img src="https://via.placeholder.com/150/000000/FFFFFF/?text=Picture+of+you" alt="">
-    <h3 class="image-sub">I'm Kilian.</h3>
   </header>
+  <div class="parallax"></div>
   <main>
-    <section>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
+    <section class="About-me">
+      <ul>
+        <li>Client Name</li>
+        <li>§§STANDARD PROJECT NAME§§§
+        </li>
+      </ul>
+      <p>
+        §§I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.​§§
+         </p>
+    </section>
+    <section class="prev-next-project">
+      <p><a href="../index.html">View All Projects</a></p>
     </section>
   </main>
   <footer>
@@ -40,10 +60,12 @@
     </section>
     <section class="contact-info">
       <span><a href="mailto:kilian-s@hotmail.com">kilian-s@hotmail.com</a>|</span>
-      <span>Tel:<a href="">0634867781</a></span>
+      <span>Tel:<a href="0634867781">0634867781</a></span>
     </section>
     <span>© 2020 Kilian Stuardo Nuñez.</span>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="../script.js"></script>
+  <script src="../carousel.js"></script>
 </body>
 </html>
