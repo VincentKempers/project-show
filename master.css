@@ -61,6 +61,7 @@ header {
   position: fixed;
   top:0;
   width:100%;
+  z-index: +99;
 }
 /* Navigation */
 nav {
@@ -225,6 +226,7 @@ nav ul li > a:active {
 }
 
 .letswork button {
+  cursor: pointer;
   background-color: var(--main-accent-color);
   color: #fff;
   border: none;
@@ -235,7 +237,19 @@ nav ul li > a:active {
 }
 
 @media screen and (max-width: 45em) {
+  footer {
+    max-width: 640px;
+    overflow-x: visible;
+    margin: 0 auto;
+    position: relative;
+  }
 
+  header {
+    max-width: 640px;
+    overflow-x: visible;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 footer {
