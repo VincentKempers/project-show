@@ -169,14 +169,23 @@ nav ul li > a:active {
 
 .imageWrapper {
   position: relative;
-  width: inherit;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
-.imageWrapper img {
+/* .imageWrapper img {
+  width: 100%;
+} */
+
+.image {
   display: block;
   width: 100%;
+  height: 30em;
+  background-color:black;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .imageWrapper .cornerLink {
   opacity: 0;
   position: absolute;
