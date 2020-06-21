@@ -22,7 +22,7 @@
 .grid > img {
   cursor: pointer;
   width: 100%;
-  height: 410px;
+  height: 100%;
 }
 
 .grid > img:last-of-type {
@@ -31,9 +31,9 @@
 
 
 .actual-carousel {
-  background-color: black;
-  height: 95vh;
-  width: 95vw;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
   z-index: +999;
   opacity: 0;
   position: fixed;
@@ -41,6 +41,79 @@
   right: 0;
   left: 0;
   bottom: 0;
-  margin: 2em 2em;
+  /* margin: 1em 1em; */
   display: none;
+}
+
+.actual-carousel > .close{
+  cursor: pointer;
+  border: none;
+  background: none;
+  background-color:none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em 0em;
+  text-align: right;
+  position: absolute;
+  right:0;
+  z-index: +9999;
+}
+
+.close > svg {
+  width: 2em;
+}
+
+
+.carouselButtons {
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  bottom:0;
+  height:100vw;
+}
+
+.prev {
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 0;
+  border: none;
+  background:none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  border: none;
+  background:none;
+}
+
+.car-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.car-img > img {
+  display: none;
+  width: 80%;
+  height: 50%;
+}
+
+.car-img > .active {
+  display: block;
+}
+
+.prev-next {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  width:100%;
 }

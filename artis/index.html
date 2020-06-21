@@ -44,16 +44,14 @@
       <p> §§ Hey zet hier een beschrijving §§ </p>
     </section>
     <section class="grid" id="section-carousel">
-      <img src="imgs/Street-Billboard-1.png" alt="">
-      <img src="imgs/styletile-V2.png" alt="">
-      <img src="imgs/Artis-Kiosk.png" alt="">
-      <img src="imgs/Artboard-1.png" alt="">
-      <img src="imgs/Artis-tour-poster-02.png" alt="">
+      <img src="imgs/Street-Billboard-1.png" alt="" data="0">
+      <img src="imgs/styletile-V2.png" alt="" data="1">
+      <img src="imgs/Artis-Kiosk.png" alt="" data="2">
+      <img src="imgs/Artboard-1.png" alt="" data="3">
+      <img src="imgs/Artis-tour-poster-02.png" alt="" data="4">
     </section>
     <section class="prev-next-project">
-      <img class="prev" src="" alt="">
       <p><a href="">View All Projects</a></p>
-      <img class="next" src="" alt="">
     </section>
   </main>
   <footer>
@@ -71,12 +69,36 @@
     <span>© 2020 Kilian Stuardo Nuñez.</span>
   </footer>
   <div class="actual-carousel">
-    <img src="" alt="">
+    <button class="close">
+      <svg width="26" height="26" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.14 15.56L7.78 9.19L1.42 15.56L0 14.14L6.37 7.78L0 1.42L1.42 0L7.78 6.37L14.14 0.0100002L15.55 1.42L9.19 7.78L15.55 14.14L14.14 15.56Z" fill="#343434"/>
+        </svg>
+    </button>
     <div class="prev-next">
-      <img class="prev" src="" alt="">
-      <img class="next" src="" alt="">
+      <!-- carousel images -->
+      <div class="car-img">
+        <img src="imgs/Street-Billboard-1.png" alt="">
+        <img src="imgs/styletile-V2.png" alt="">
+        <img src="imgs/Artis-Kiosk.png" alt="">
+        <img src="imgs/Artboard-1.png" alt="">
+        <img src="imgs/Artis-tour-poster-02.png" alt="">
+      </div>
+
+      </div>
+      <div class="carouselButtons">
+        <!-- prev button -->
+        <button class="prev">
+          <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.4745 19.9745L12.4618 9.98725L2.4745 0L0 2.4745L7.51275 9.98725L0 17.5L2.4745 19.9745Z" fill="black"/>
+            </svg>
+        </button>
+        <!-- next button -->
+        <button class="next">
+          <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.4745 19.9745L12.4618 9.98725L2.4745 0L0 2.4745L7.51275 9.98725L0 17.5L2.4745 19.9745Z" fill="black"/>
+            </svg>
+        </button>
     </div>
-  </div>
   <script src="../script.js"></script>
   <script src="../carousel.js"></script>
 </body>
