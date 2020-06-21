@@ -248,7 +248,7 @@ nav ul li > a:active {
     max-width: 640px;
     overflow-x: visible;
     margin: 0 auto;
-    position: relative;
+    position: fixed;
   }
 }
 
