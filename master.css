@@ -184,6 +184,7 @@ nav ul li > a:active {
   background-color:black;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 .imageWrapper .cornerLink {
