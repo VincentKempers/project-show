@@ -22,6 +22,10 @@
       background-size: cover;
       z-index: -1;
     }
+    #image1 {background-image:url("imgs/Mockup-imac.png")}
+    #image2 {background-image:url("imgs/Desktop 2020.06.15 - 11.50.46.02.mp4.png")}
+    #image3 {background-image:url("imgs/Mockup-mobile.png")}
+
     </style>
 </head>
 <body>
@@ -47,11 +51,15 @@
          </p>
     </section>
     <section class="grid" id="section-carousel">
-      <img src="imgs/Mockup-imac.png" alt="" data="0">
-      <img src="imgs/Desktop 2020.06.15 - 11.50.46.02.mp4.png" alt="" data="1">
-      <img src="imgs/Mockup-mobile.png" alt="" data="2">
-      <img src="imgs/Screencap_ Kilian-Stuardo_Meesterproef-Aarsman.mp4" alt="" data="3">
-      <img src="imgs/X - 2.mp4" alt="" data="4">
+      <div class="image" id="image1" data="0"></div>
+      <div class="image" id="image2" data="1"></div>
+      <div class="image" id="image3" data="2"></div>
+      <video class="image" id="image5" data="3">
+        <source src="imgs/X - 2.mp4" type="video/mp4">
+      </video>
+      <video class="image" id="image4" data="4">
+        <source src="imgs/Screencap_ Kilian-Stuardo_Meesterproef-Aarsman.mp4" type="video/mp4">
+      </video>
     </section>
     <section class="prev-next-project">
       <p><a href="../index.html">View All Projects</a></p>
@@ -83,8 +91,12 @@
         <img src="imgs/Mockup-imac.png" alt="">
         <img src="imgs/Desktop 2020.06.15 - 11.50.46.02.mp4.png" alt="">
         <img src="imgs/Mockup-mobile.png" alt="">
-        <img src="imgs/Screencap_ Kilian-Stuardo_Meesterproef-Aarsman.mp4" alt="">
-        <img src="imgs/X - 2.mp4" alt="">
+        <video width="800" height="500" controls>
+          <source src="imgs/X - 2.mp4" type="video/mp4">
+        </video>
+        <video width="800" height="500" controls>
+          <source src="imgs/Screencap_ Kilian-Stuardo_Meesterproef-Aarsman.mp4" type="video/mp4">
+        </video>
       </div>
 
       </div>
