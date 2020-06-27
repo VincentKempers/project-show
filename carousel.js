@@ -15,6 +15,16 @@ carouselClose.addEventListener('click', () => {
   carousel.style.display = 'none';
 })
 
+
+document.addEventListener('keyup', function(event) {
+  if (event.keyCode === 27 ) {
+    for (let i=0; i < section.length; i++) {
+      carouselImages[i].classList.remove('active');
+    }
+    carousel.style.display = 'none';
+  }
+}, true)
+
 // carousel functions
 function loop() {
   for (let i=0; i < section.length; i++) {
