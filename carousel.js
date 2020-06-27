@@ -66,8 +66,6 @@ prev.addEventListener('click', function() {
 
 
 next.addEventListener('click', function() {
-  if (count) {
-  }
   if (count === section.length - 1) {
     // next.style.display = 'none';
     carouselImages[count].classList.remove('active');

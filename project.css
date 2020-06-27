@@ -127,6 +127,12 @@
   max-height: 50%;
 }
 
+.car-img > video {
+  display: none;
+  max-width: 60%;
+  max-height: 50%;
+}
+
 .car-img > .active {
   display: block;
 }
